@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Footer from "../Footer";
 import Header from "../Header";
+import Sidebar from "../Sidebar";
 import { Container, Content } from "./DashboardLayout.styles";
 
 type DashboardLayoutProps = {
@@ -16,7 +17,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
     <Container>
       <Header isOpened={isOpened} toggleDrawer={toggleDrawer} />
-      <Content>{children}</Content>
+      <Content>
+        <Sidebar isOpened={isOpened} />
+        {children}
+      </Content>
       <Footer />
     </Container>
   );
