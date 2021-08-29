@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { MdMenu, MdChevronLeft } from "react-icons/md";
 import {
   HeaderContainer,
@@ -6,11 +5,15 @@ import {
   TitleContainer,
 } from "./Header.styles";
 
-export default function Header() {
-  const [isOpened, setIsOpened] = useState(false);
+type HeaderProps = {
+  isOpened: boolean;
+  toggleDrawer: () => void;
+};
+
+export default function Header({ isOpened, toggleDrawer }: HeaderProps) {
   return (
     <HeaderContainer>
-      <IconContainer onClick={() => setIsOpened(!isOpened)}>
+      <IconContainer onClick={toggleDrawer}>
         {isOpened ? <MdChevronLeft /> : <MdMenu />}
       </IconContainer>
       <TitleContainer>Header</TitleContainer>
