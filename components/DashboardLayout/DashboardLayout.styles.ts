@@ -7,3 +7,8 @@ export const Container = styled.div`
   min-height: 100vh;
   color: #000133;
 `;
+
+export const Content = styled.div`
+  display: flex;
+  flex: 1;
+`;
