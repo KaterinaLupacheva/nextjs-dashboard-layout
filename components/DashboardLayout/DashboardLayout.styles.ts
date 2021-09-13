@@ -12,3 +12,7 @@ export const Content = styled.div`
   display: flex;
   flex: 1;
 `;
+
+export const PageContainer = styled.div`
+  padding: 20px;
+`;

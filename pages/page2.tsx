@@ -5,11 +5,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard</title>
+        <title>Page2</title>
         <meta name="description" content="Nextjs Dashboard Layout" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>page 1</div>
+      <div>page 2</div>
     </>
   );
 };

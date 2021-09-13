@@ -8,4 +8,6 @@ export const SidebarContainer = styled.aside<SidebarContainerProps>`
   width: ${(props) => (props.isOpened ? "240px" : "0px")};
   transition: width 0.7s;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 `;
