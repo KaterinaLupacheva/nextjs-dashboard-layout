@@ -12,6 +12,10 @@ export const HeaderContainer = styled.div`
 export const IconContainer = styled.div`
   padding: 10px;
 
+  & svg {
+    height: 30px;
+  }
+
   &:hover {
     cursor: pointer;
   }

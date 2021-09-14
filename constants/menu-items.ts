@@ -1,33 +1,33 @@
 import React from "react";
 import {
-  MdDashboard,
-  MdShoppingCart,
-  MdPeople,
-  MdAttachMoney,
-} from "react-icons/md";
+  Dashboard,
+  ShoppingCart,
+  People,
+  AttachMoney,
+} from "@styled-icons/material";
 
 export const MENU_ITEMS: MenuItem[] = [
   {
     name: "Dashboard",
-    icon: MdDashboard,
+    icon: Dashboard,
     url: "/",
     id: 0,
   },
   {
     name: "Orders",
-    icon: MdShoppingCart,
+    icon: ShoppingCart,
     url: "/page2",
     id: 1,
   },
   {
     name: "Customers",
-    icon: MdPeople,
+    icon: People,
     url: "/page3",
     id: 2,
   },
   {
     name: "Inventory",
-    icon: MdAttachMoney,
+    icon: AttachMoney,
     url: "/page4",
     id: 3,
   },

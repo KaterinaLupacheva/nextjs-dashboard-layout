@@ -4,16 +4,18 @@ import { MenuItemContainer } from "./MenuItem.styles";
 
 type MenuItemProps = {
   menuItem: MenuItemType;
+  selected: boolean;
 };
 
 export default function MenuItem({
   menuItem: { name, icon: Icon, url },
+  selected,
 }: MenuItemProps) {
   return (
     <Link href={url} passHref>
-      <MenuItemContainer>
+      <MenuItemContainer className={selected ? "selected" : ""}>
         <Icon />
-        <div>{name}</div>
+        <span>{name}</span>
       </MenuItemContainer>
     </Link>
   );

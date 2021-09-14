@@ -1,4 +1,4 @@
-import { MdMenu, MdChevronLeft } from "react-icons/md";
+import { Menu, ChevronLeft } from "@styled-icons/material";
 import {
   HeaderContainer,
   IconContainer,
@@ -14,7 +14,7 @@ export default function Header({ isOpened, toggleDrawer }: HeaderProps) {
   return (
     <HeaderContainer>
       <IconContainer onClick={toggleDrawer}>
-        {isOpened ? <MdChevronLeft /> : <MdMenu />}
+        {isOpened ? <ChevronLeft /> : <Menu />}
       </IconContainer>
       <TitleContainer>Header</TitleContainer>
     </HeaderContainer>
