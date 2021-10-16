@@ -9,7 +9,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Nextjs Dashboard Layout" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>page 2</div>
+      <div>Orders</div>
     </>
   );
 };
