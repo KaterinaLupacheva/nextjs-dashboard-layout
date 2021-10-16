@@ -8,18 +8,18 @@ type MenuItemProps = {
 };
 
 export default function MenuItem({
-  menuItem: { name, icon: Icon, url },
+  menuItem: { name, icon: Icon, url, depth },
 }: MenuItemProps) {
   const router = useRouter();
   const selected = router.asPath === url;
   return (
-    <>
+    <MenuItemContainer className={selected ? "selected" : ""} depth={depth}>
       <Link href={url} passHref>
-        <MenuItemContainer className={selected ? "selected" : ""}>
+        <div className="menu-item">
           <Icon />
           <span>{name}</span>
-        </MenuItemContainer>
+        </div>
       </Link>
-    </>
+    </MenuItemContainer>
   );
 }

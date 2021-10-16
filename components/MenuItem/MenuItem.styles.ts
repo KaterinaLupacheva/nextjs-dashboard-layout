@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MenuItemContainer = styled.a`
+export const MenuItemContainer = styled.a<{ depth: number }>`
   display: flex;
   flex-direction: row;
   font-size: 20px;
@@ -15,11 +15,16 @@ export const MenuItemContainer = styled.a`
   &:hover {
     background-color: #00022e;
     color: #fc86aa;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .menu-item {
+    margin-left: ${({ depth }) => `${depth}rem`};
   }
 
   &.selected {
     background-color: #00022e;
     color: white;
-    opacity: 0.5;
   }
 `;

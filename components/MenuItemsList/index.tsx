@@ -9,7 +9,7 @@ export default function MenuItemsList({ options }: MenuItemsListProps) {
   return (
     <>
       {options.map((option) => (
-        <div key={option.id} style={{marginLeft: `${option.depth}rem`}}>
+        <div key={option.id}>
           <MenuItem menuItem={option} />
           {option.subItems && option.subItems?.length > 0 ? (
             <MenuItemsList options={option.subItems} />
