@@ -4,8 +4,9 @@ export const MenuItemContainer = styled.a<{ depth: number }>`
   display: flex;
   flex-direction: row;
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 10px 0px 10px 10px;
   align-items: center;
+  justify-content: space-between;
 
   & svg {
     height: 30px;

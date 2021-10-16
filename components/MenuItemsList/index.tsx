@@ -11,9 +11,7 @@ export default function MenuItemsList({ options }: MenuItemsListProps) {
       {options.map((option) => (
         <div key={option.id}>
           <MenuItem menuItem={option} />
-          {option.subItems && option.subItems?.length > 0 ? (
-            <MenuItemsList options={option.subItems} />
-          ) : null}
+          
         </div>
       ))}
     </>
