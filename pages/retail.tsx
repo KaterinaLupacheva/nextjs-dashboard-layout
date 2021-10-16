@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Container from "../components/Container";
 
-const Home: NextPage = () => {
+const Retail: NextPage = () => {
   return (
-    <Container title="Dashboard">
-      <div>Dashboard</div>
+    <Container title="Retail">
+      <div>Retail</div>
     </Container>
   );
 };
 
-export default Home;
+export default Retail;

@@ -25,34 +25,34 @@ const MENU_OPTIONS: MenuOption[] = [
       {
         name: "New",
         icon: AddShoppingCart,
-        url: "/page20",
+        url: "/new-orders",
       },
       {
         name: "Completed",
         icon: Done,
-        url: "/page21",
+        url: "/completed-orders",
       },
     ],
   },
   {
     name: "Customers",
     icon: People,
-    url: "/page3",
+    url: "/customers",
     subItems: [
       {
         name: "Corporate",
         icon: Business,
-        url: "/page3",
+        url: "/corporate",
       },
       {
         name: "SMB",
         icon: HomeWork,
-        url: "/page3",
+        url: "/smb",
         subItems: [
           {
             name: "Retail",
             icon: Person,
-            url: "/page3",
+            url: "/retail",
           },
         ],
       },
@@ -61,7 +61,7 @@ const MENU_OPTIONS: MenuOption[] = [
   {
     name: "Inventory",
     icon: AttachMoney,
-    url: "/page4",
+    url: "/inventory",
   },
 ];
 

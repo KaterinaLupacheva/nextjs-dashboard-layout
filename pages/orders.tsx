@@ -1,17 +1,12 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import Container from "../components/Container";
 
-const Home: NextPage = () => {
+const Orders: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>Page2</title>
-        <meta name="description" content="Nextjs Dashboard Layout" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Container title="Orders">
       <div>Orders</div>
-    </>
+    </Container>
   );
 };
 
-export default Home;
+export default Orders;
