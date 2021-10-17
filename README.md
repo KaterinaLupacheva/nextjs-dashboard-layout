@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Dashboard Layout template (with Styled Components)
+
+Starter code with the implementation of:
+
+- Basic layout: header, the main content area with drawer, footer
+- Drawer toggle
+- Multilevel (nested) [menu](#menu)
+- [Theming](#theme)
+
+## Technologies used
+
+- Next.js v.11
+- TypeScript v.4
+- Styled Components v.5
+- Styled Icons (Material) v.10
+
+### Menu
+
+To change (add/remove) menu options, open `constants/menu-items.ts` file, and edit **MENU_OPTIONS** variable by updating a name, url and icon props. Any menu item can have nested options (_subItems_ array). There is no menu depth limit (although some additional styling might require for 3+ levels). The template will generate a menu structure automatically based on the provided **MENU_OPTIONS**.
+
+### Theme
+
+To add/remove/change any theme colors (or add any other theme props, like font-size, border-radius, spacing, etc.) edit `styled.d.ts` file to have type safety, and `styles/theme.ts`.
 
 ## Getting Started
 
-First, run the development server:
+1. Get the latest version:
+
+```bash
+git clone https://github.com/KaterinaLupacheva/nextjs-dashboard-layout.git
+cd nextjs-dashboard-layout
+```
+
+2.Run
+
+```bash
+npm install
+```
+
+3.Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4.Open http://localhost:3000 to view it in the browser.
