@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.footer`
   display: flex;
-  background: #00022e;
+  background: ${props => props.theme.colors.main};
   height: 50px;
   align-items: center;
   justify-content: center;
-  color: #fc86aa;
+  color: ${props => props.theme.colors.secondary};
 `;

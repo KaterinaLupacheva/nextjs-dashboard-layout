@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   display: flex;
-  background: #00022e;
+  background: ${(props) => props.theme.colors.main};
   height: 50px;
   align-items: center;
   justify-content: center;
-  color: #fc86aa;
+  color: ${(props) => props.theme.colors.secondary};
 `;
 
 export const IconContainer = styled.div`

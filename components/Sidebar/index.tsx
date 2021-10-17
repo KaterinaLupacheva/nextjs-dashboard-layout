@@ -1,4 +1,4 @@
-import { SidebarContainer } from "./Sidebar.styled";
+import { SidebarContainer } from "./Sidebar.styles";
 import { MENU_ITEMS } from "../../constants/menu-items";
 import MenuItemsList from "../MenuItemsList";
 

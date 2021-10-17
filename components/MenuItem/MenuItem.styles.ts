@@ -14,8 +14,8 @@ export const MenuItemContainer = styled.a<{ depth: number }>`
   }
 
   &:hover {
-    background-color: #00022e;
-    color: #fc86aa;
+    background-color: ${(props) => props.theme.colors.main};
+    color: ${(props) => props.theme.colors.secondary};
     opacity: 0.5;
     cursor: pointer;
   }
@@ -25,7 +25,7 @@ export const MenuItemContainer = styled.a<{ depth: number }>`
   }
 
   &.selected {
-    background-color: #00022e;
-    color: white;
+    background-color: ${(props) => props.theme.colors.main};
+    color: ${props => props.theme.colors.textLight};
   }
 `;

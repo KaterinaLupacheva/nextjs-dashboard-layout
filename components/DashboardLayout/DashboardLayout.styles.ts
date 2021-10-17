@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  color: #000133;
+  color: ${(props) => props.theme.colors.textDark};
 `;
 
 export const Content = styled.div`
@@ -15,4 +15,5 @@ export const Content = styled.div`
 
 export const PageContainer = styled.div`
   padding: 20px;
+  width: 80vw;
 `;
