@@ -1,5 +1,7 @@
 # Next.js Dashboard Layout template (with Styled Components)
 
+![demo](demo.gif)
+
 Starter code with the implementation of:
 
 - Basic layout: header, the main content area with drawer, footer
