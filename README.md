@@ -31,16 +31,16 @@ git clone https://github.com/KaterinaLupacheva/nextjs-dashboard-layout.git
 cd nextjs-dashboard-layout
 ```
 
-2.Run
+2. Run
 
 ```bash
 npm install
 ```
 
-3.Start the development server:
+3. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-4.Open http://localhost:3000 to view it in the browser.
+4. Open http://localhost:3000 to view it in the browser.
