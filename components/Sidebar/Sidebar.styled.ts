@@ -6,7 +6,7 @@ type SidebarContainerProps = {
 export const SidebarContainer = styled.aside<SidebarContainerProps>`
   background: #d8dcd6;
   width: ${(props) => (props.isOpened ? "240px" : "0px")};
-  transition: width 0.7s;
+  transition: width 0.5s;
   overflow: hidden;
   display: flex;
   flex-direction: column;
