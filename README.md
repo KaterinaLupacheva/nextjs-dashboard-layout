@@ -2,6 +2,8 @@
 
 ![demo](demo.gif)
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FKaterinaLupacheva%2Fnextjs-dashboard-layout)
+
 Starter code with the implementation of:
 
 - Basic layout: header, the main content area with drawer, footer
