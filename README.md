@@ -13,7 +13,7 @@ Starter code with the implementation of:
 
 ## Technologies used
 
-- Next.js v.11
+- Next.js v.12
 - TypeScript v.4
 - Styled Components v.5
 - Styled Icons (Material) v.10
@@ -48,3 +48,7 @@ npm run dev
 ```
 
 4. Open http://localhost:3000 to view it in the browser.
+
+## How to create from scratch
+
+I wrote the blog post on how to create the Dashboard layout. You can read it [here](https://ramonak.io/posts/nextjs-dashboard-layout).
