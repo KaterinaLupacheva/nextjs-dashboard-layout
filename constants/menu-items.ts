@@ -81,22 +81,16 @@ type MenuOption = {
   subItems?: MenuOption[];
 };
 
-function createMenu(menuOptions: MenuOption[]) {
-  const makeMenuLevel = (options: MenuOption[], depth = 0): MenuItem[] => {
-    return options.map((option, idx) => {
-      return {
-        ...option,
-        id: depth === 0 ? idx.toString() : `${depth}.${idx}`,
-        depth,
-        subItems:
-          option.subItems && option.subItems.length > 0
-            ? makeMenuLevel(option.subItems, depth + 1)
-            : undefined,
-      };
-    });
-  };
-
-  return makeMenuLevel(menuOptions);
+function makeMenuLevel(options: MenuOption[], depth = 0): MenuItem[] {
+  return options.map((option, idx) => ({
+    ...option,
+    id: depth === 0 ? idx.toString() : `${depth}.${idx}`,
+    depth,
+    subItems:
+      option.subItems && option.subItems.length > 0
+        ? makeMenuLevel(option.subItems, depth + 1)
+        : undefined,
+  }));
 }
 
-export const MENU_ITEMS: MenuItem[] = createMenu(MENU_OPTIONS);
+export const MENU_ITEMS: MenuItem[] = makeMenuLevel(MENU_OPTIONS);

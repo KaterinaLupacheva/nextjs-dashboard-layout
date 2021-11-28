@@ -21,11 +21,14 @@ export const MenuItemContainer = styled.a<{ depth: number }>`
   }
 
   .menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-left: ${({ depth }) => `${depth}rem`};
   }
 
   &.selected {
     background-color: ${(props) => props.theme.colors.main};
-    color: ${props => props.theme.colors.textLight};
+    color: ${(props) => props.theme.colors.textLight};
   }
 `;

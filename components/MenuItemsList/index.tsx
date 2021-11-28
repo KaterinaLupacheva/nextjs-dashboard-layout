@@ -10,9 +10,7 @@ export default function MenuItemsList({ options }: MenuItemsListProps) {
   return (
     <ListContainer>
       {options.map((option) => (
-        <div key={option.id}>
-          <MenuItem menuItem={option} />
-        </div>
+        <MenuItem menuItem={option} key={option.id} />
       ))}
     </ListContainer>
   );
