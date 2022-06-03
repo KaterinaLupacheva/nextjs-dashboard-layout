@@ -1,4 +1,5 @@
-import Document, { DocumentContext } from "next/document";
+import { DocumentContext } from "next/document";
+import Document from 'next/dist/pages/_document'
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
